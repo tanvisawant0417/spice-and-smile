@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    overflow: hidden;
+}
+
+/* BACKGROUND IMAGE FROM HTML */
+.bg-image {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.45);
+    pointer-events: none; /* 🔥 THIS FIXES CLICK */
+}
+
+
+/* CENTER WRAPPER */
+.signup-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SLIDE ANIMATION */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-120%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* GLASS BOX */
+.glass-box {
+    width: 400px;
+    padding: 50px 30px 30px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    border: 3px solid #ff6a00;
+    box-shadow: 0 0 20px #ff6a00;
+    text-align: center;
+    animation: slideDown 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* TEXT */
+h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #ff6a00;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+/* BUTTON */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #c0392b, #ff6a00);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff6a00;
+}
+
+/* TEXT */
+.footer-text {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* HIDE */
+.hidden {
+    display: none !important;
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 1024px) {
+    .glass-box {
+        width: 420px;
+        padding: 45px 28px 28px;
+    }
+    
+    h2 {
+        font-size: 23px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .glass-box {
+        width: 380px;
+        padding: 40px 25px 25px;
+        border-radius: 35px;
+    }
+    
+    h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    input {
+        padding: 11px;
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .submit-btn {
+        padding: 11px;
+        font-size: 15px;
+    }
+}
+
+/* Small Tablets and Large Phones */
+@media (max-width: 600px) {
+    .glass-box {
+        width: 90%;
+        max-width: 350px;
+        padding: 35px 22px 22px;
+        border-radius: 30px;
+        border: 2px solid #ff6a00;
+    }
+    
+    h2 {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    
+    input {
+        padding: 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+    
+    .submit-btn {
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+    
+    .footer-text {
+        font-size: 13px;
+        margin-top: 15px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .glass-box {
+        width: 92%;
+        padding: 30px 18px 18px;
+        border-radius: 25px;
+    }
+    
+    h2 {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+    
+    input {
+        padding: 9px;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .submit-btn {
+        padding: 9px;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+}
+
+/* Extra Small Phones */
+@media (max-width: 359px) {
+    .glass-box {
+        width: 95%;
+        padding: 25px 15px 15px;
+        border-radius: 20px;
+    }
+    
+    h2 {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    
+    input {
+        padding: 8px;
+        font-size: 13px;
+        margin-bottom: 8px;
+        border-radius: 6px;
+    }
+    
+    .submit-btn {
+        padding: 8px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+    
+    .footer-text {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+}
