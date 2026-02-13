@@ -134,7 +134,7 @@ require_once "db.php"; // includes $conn
         <div class="modal-content">
            
             <h2>Order Confirmed! 🥳</h2>
-            <p>Thank you for choosing Adarsh & Tanvi Spice and Smile.
+            <p>Thank you for choosing Spice and Smile.
 Fresh flavors and happy smiles are being prepared just for you! 💛</p>
             <div class="modal-footer">
         <button class="track-btn" onclick="goToTracking()">Track Your Order</button>
