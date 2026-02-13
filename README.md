@@ -70,16 +70,16 @@ Spice and Smile is a dynamic web-based food ordering platform that enables users
 ## 📸 Screenshots
 
 1. 🏠 Homepage
-![Homepage](images/homepage.png)
+(images/homepage.png)
 
 2. 🛒 Cart Page
-![Cart](images/cart.png)
+(images/cart.png)
 
 3. 💳 Checkout Page
-![Checkout](images/checkout.png)
+(images/checkout.png)
 
 4. 📦 Order Confirmation
-![Order](images/order.png)
+(images/order.png)
 
 
 ## 🙋‍♂️ Author
