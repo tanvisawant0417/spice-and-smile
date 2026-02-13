@@ -1,7 +1,7 @@
 
 # 🍽️ Spice and Smile
 
-> A modern, user-friendly web application for seamless food ordering, built with PHP, JavaScript, and CSS.
+> A modern, user-friendly web application for seamless food ordering, built with HTML, CSS , JavaScript, and MYSQL (WAMP).
 
 ---
 
@@ -64,6 +64,23 @@ Spice and Smile is a dynamic web-based food ordering platform that enables users
 - **images/**: Project images and assets
 
 ---
+
+---
+
+## 📸 Screenshots
+
+1. 🏠 Homepage
+![Homepage](images/homepage.png)
+
+2. 🛒 Cart Page
+![Cart](images/cart.png)
+
+3. 💳 Checkout Page
+![Checkout](images/checkout.png)
+
+4. 📦 Order Confirmation
+![Order](images/order.png)
+
 
 ## 🙋‍♂️ Author
 
